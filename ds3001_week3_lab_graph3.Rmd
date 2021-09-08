@@ -11,7 +11,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 # Load data
-geyser <- data.frame(faithful, package="datasets")
-str(geyser)
+str(faithful)
+```
+
+```{r}
+# Data Visualization
+library(ggplot2)
+ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkmagenta') 
+
 ```
 
