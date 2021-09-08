@@ -33,3 +33,9 @@ ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkma
 library(ggplot2)
 ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkmagenta') +xlab('Waiting (time it took for eruption)')  + ggtitle("Distribution of Eruption Waiting Times")
 ```
+
+```{r}
+# Adding title
+library(ggplot2)
+ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkmagenta') +xlab('Waiting (time it took for eruption)')  + ggtitle("Distribution of Geyser Eruption Waiting Times")
+```
