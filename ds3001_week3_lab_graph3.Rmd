@@ -1,0 +1,17 @@
+---
+title: "ds3001_week3_lab_graph3"
+author: "Claire Dozier"
+date: "9/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Load data
+geyser <- data.frame(faithful, package="datasets")
+str(geyser)
+```
+
