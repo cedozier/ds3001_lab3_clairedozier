@@ -27,3 +27,9 @@ library(ggplot2)
 ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkmagenta') +xlab('Waiting (time it took for eruption)')
 ```
 
+
+```{r}
+# Adding labels
+library(ggplot2)
+ggplot(faithful, aes(x = waiting)) + geom_histogram(binwidth = 3, fill = 'darkmagenta') +xlab('Waiting (time it took for eruption)')  + ggtitle("Distribution of Eruption Waiting Times")
+```
